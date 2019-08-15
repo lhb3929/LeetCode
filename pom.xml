@@ -30,6 +30,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.grouplens.lenskit/lenskit-core -->
+		<dependency>
+			<groupId>org.grouplens.lenskit</groupId>
+			<artifactId>lenskit-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -41,6 +53,21 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.grouplens.lenskit/lenskit-core -->
+			<dependency>
+				<groupId>org.grouplens.lenskit</groupId>
+				<artifactId>lenskit-core</artifactId>
+				<version>3.0-T5</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.18.8</version>
+				<scope>provided</scope>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
