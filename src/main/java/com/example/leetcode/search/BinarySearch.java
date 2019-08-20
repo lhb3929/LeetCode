@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2018 Wormpex.com. All Rights Reserved
  */
-package com.example.leetcode.other;
+package com.example.leetcode.search;
 
 import lombok.extern.java.Log;
 
