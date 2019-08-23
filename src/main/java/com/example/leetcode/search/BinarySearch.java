@@ -21,13 +21,13 @@ public class BinarySearch {
 		int middle = end / 2;
 		while (middle < end) {
 
-			if (intArr[middle] == target) {
+			if (intArr[middle] == target && (0 == middle || intArr[middle - 1] != intArr[middle])) {
 				return middle;
-			} else if (intArr[middle] > target) {
+			} else if (intArr[middle] < target) {
+				middle = (middle + end) / 2;
+			} else {
 				end = middle;
 				middle = end / 2;
-			} else {
-				middle = (middle + end) / 2;
 			}
 		}
 
@@ -36,7 +36,7 @@ public class BinarySearch {
 
 
 	public static void main(String[] args) {
-		int pos = new BinarySearch().search(new int[] {7, 8, 13, 20, 39, 46, 64}, 7);
+		int pos = new BinarySearch().search(new int[] {7, 8, 8, 8, 8, 8, 8, 13, 20, 39, 46, 64}, 8);
 		log.info(pos + "");
 	}
 }
