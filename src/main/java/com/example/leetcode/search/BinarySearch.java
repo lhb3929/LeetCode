@@ -34,6 +34,12 @@ public class BinarySearch {
 		return -1;
 	}
 
+	/**
+	 * 循环有序数组二分法  eg.7, 8, 9, 13, 20, 39, 46, 64, 1, 2, 3
+	 * @param intArr 循环数组
+	 * @param target 待查找目标数
+	 * @return 目标数在循环数组种游标，存在则返回-1
+	 */
 	private int roundSearch(int[] intArr, int target) {
 
 		if (null == intArr || 0 == intArr.length) {
