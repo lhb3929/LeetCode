@@ -76,5 +76,7 @@ public class LRU<K, V> {
 
 		private Node next;
 
+		private int hash;
+
 	}
 }
